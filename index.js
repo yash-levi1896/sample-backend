@@ -3,8 +3,8 @@ const app=express()
 
 
 app.get("/get",(req,res)=>{
-    console.log(req.get('host'))
-    res.send("response ends")
+    res.send(req.get('host'))
+    
 })
 
 app.listen(3000,()=>{
